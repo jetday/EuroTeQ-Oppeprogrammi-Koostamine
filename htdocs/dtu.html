@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width">
+  <title>Technical University of Denmark</title>
+
+  <link href="ctu/style.css" rel="stylesheet" type="text/css">
+  <style>/
+  
+
+.msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+    background: #ffff00 !important;
+    color: black !important;
+}
+
+.msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+    background: #b2d6f3 !important;
+    color: black !important;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background-color: Highlight !important;
+        color: HighlightText !important;
+    }
+
+    .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background: yellow !important;
+        color: black !important;
+    }
+}
+</style></head>
+
+<body>
+
+
+  <h1>Technical University of Denmark</h1>
+  <p>
+  Usage:<br>
+  Fill out as much of the form as you want and click the 'Submit' button.<br>
+  In the course table view, you can click on the course names to view their respective subjectmaps.<br>
+  the course table view you can choose courses of your choosing to add them to your program. You can do this by clicking the checkboxes on the courses of your choosing and clicking the button 'Add Selected'.<br>
+  You can view the courses you have selected by clicking the 'Selected' button.<br>
+  You can click the 'Clear Selected' and 'Clear all' buttons to clear the courses you have added to your program.<br><br>
+  University specific information:<br>
+  As an exchange student at DTU, you are recommended to take between 20 and 30 ECTS credits per semester depending on the requirements of your home university and your own wishes. More info can be found at: https://www.dtu.dk/english/education/incoming-students/exchange<br>
+  </p>
+
+
+  <form action="/dtu.html">
+  <label for="cname">Course name</label><br>
+    <input type="text" id="cname" name="cname"><br>
+
+  <h2>Faculty</h2>
+  <input type="checkbox" id="fac1" name="fac" value="AplM">
+  <label for="fac1">Department of Applied Mathematics and Computer Science</label><br>
+  <input type="checkbox" id="fac2" name="fac" value="Phys">
+  <label for="fac2">Department of Physics</label><br>
+  <input type="checkbox" id="fac3" name="fac" value="Envir">
+  <label for="fac3">Department of Environmental and Resource Engineering</label><br>
+  <input type="checkbox" id="fac4" name="fac" value="Healt">
+  <label for="fac4">Department of Health Technology</label><br>
+  <input type="checkbox" id="fac5" name="fac" value="Food">
+  <label for="fac5">National Food Institute</label><br>
+  <input type="checkbox" id="fac6" name="fac" value="Aqua">
+  <label for="fac6">National Institute of Aquatic Resources</label><br>
+  <input type="checkbox" id="fac7" name="fac" value="Chem">
+  <label for="fac7">Department of Chemistry</label><br>
+  <input type="checkbox" id="fac8" name="fac" value="Bio">
+  <label for="fac8">Department of Biotechnology and Biomedicine</label><br>
+  <input type="checkbox" id="fac9" name="fac" value="Chemical">
+  <label for="fac9">Department of Chemical Engineering</label><br>
+  <input type="checkbox" id="fac10" name="fac" value="Biosus">
+  <label for="fac10">DTU Biosustain</label><br>
+  <input type="checkbox" id="fac11" name="fac" value="Space">
+  <label for="fac11">National Space Institute</label><br>
+  <input type="checkbox" id="fac12" name="fac" value="Elect">
+  <label for="fac12">Department of Electrical and Photonics Engineering</label><br>
+  <input type="checkbox" id="fac13" name="fac" value="Mech">
+  <label for="fac13">Department of Civil and Mechanical Engineering</label><br>
+  <input type="checkbox" id="fac14" name="fac" value="Manag">
+  <label for="fac14">Department of Technology Management and Economics</label><br>
+  <input type="checkbox" id="fac15" name="fac" value="Wind">
+  <label for="fac15">Department of Wind and Energy Systems</label><br>
+  <input type="checkbox" id="fac16" name="fac" value="Conver">
+  <label for="fac16">Department of Energy Conversion and Storage</label><br>
+  <input type="checkbox" id="fac17" name="fac" value="Didac">
+  <label for="fac17">Department of Engineering Technology and Didactics</label><br>
+  <input type="checkbox" id="fac18" name="fac" value="OtherC">
+  <label for="fac18">Other courses</label><br>
+
+  <h2>Study level</h2>
+  <input type="checkbox" id="degree1" name="degree" value="Bachelor">
+  <label for="degree1">Bachelor</label><br>
+  <input type="checkbox" id="degree2" name="degree" value="Master">
+  <label for="degree2">Master</label><br>
+  <input type="checkbox" id="degree3" name="degree" value="Doctorate">
+  <label for="degree3">Doctorate</label><br>
+
+    <h2>Semester</h2>
+  <input type="checkbox" id="semester1" name="semester" value="Spring">
+  <label for="semester1">Spring</label><br>
+  <input type="checkbox" id="semester2" name="semester" value="Autumn">
+  <label for="semester2">Autumn</label><br>
+
+    <h2>Sort for</h2>
+
+    <input type="radio" id="course" name="sort" value="3">
+    <label for="course">Course</label><br>
+    <input type="radio" id="semester" name="sort" value="4">
+    <label for="semester">Semester</label><br>
+    <input type="radio" id="credits" name="sort" value="5">
+    <label for="credits">Credits</label><br>
+    <input type="radio" id="faculty" name="sort" value="6">
+    <label for="faculty">Faculty</label><br>
+    <input type="radio" id="study" name="sort" value="7">
+    <label for="study">Study level</label><br>
+
+    <h2>Ascending/Descending</h2>
+
+    <input type="radio" id="ascend" name="ascend_descend" value="ascending">
+    <label for="ascend">Ascending</label><br>
+    <input type="radio" id="descend" name="ascend_descend" value="descending">
+    <label for="descend">Descending</label><br><br>
+
+    <input type="hidden" id="uni" name="uni" value="DTU">
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <form action="/dtu.html">
+    
+    <input type="submit" name="selected" value="Selected">
+  </form>
+  <object type="text/html" data="output.html" width="50%" height="600" class="objectOutput"></object>
+
+
+
+
+</body></html>

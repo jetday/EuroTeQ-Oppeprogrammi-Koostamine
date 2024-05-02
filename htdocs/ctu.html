@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width">
+  <title>Czech Technical University in Prague</title>
+
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <style>/
+  
+
+.msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+    background: #ffff00 !important;
+    color: black !important;
+}
+
+.msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+    background: #b2d6f3 !important;
+    color: black !important;
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .msreadout-word-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background-color: Highlight !important;
+        color: HighlightText !important;
+    }
+
+    .msreadout-line-highlight:not(.msreadout-inactive-highlight) {
+        -ms-high-contrast-adjust: none;
+        background: yellow !important;
+        color: black !important;
+    }
+}
+</style></head>
+
+<body>
+
+
+  <h1>Czech Technical University in Prague</h1>
+  <p>
+  Usage:<br>
+  Fill out as much of the form as you want and click the 'Submit' button.<br>
+  In the course table view, you can click on the course names to view their respective subjectmaps.<br>
+  the course table view you can choose courses of your choosing to add them to your program. You can do this by clicking the checkboxes on the courses of your choosing and clicking the button 'Add Selected'.<br>
+  You can view the courses you have selected by clicking the 'Selected' button.<br>
+  You can click the 'Clear Selected' and 'Clear all' buttons to clear the courses you have added to your program.<br><br>
+  University specific information:<br>
+  All of the incoming students are required to collect at least 15 ECTS credits/semester towards their degree programme at their home university. Students can take courses from different faculties. Most of your courses should normally be at your host CTU faculty. Note that the Architectural Design Course at the Faculty of Architecture is available only for students registered at the Faculty of Architecture. More info can be found at: https://international.cvut.cz/students/incoming-students/erasmus-and-exchange<br>
+  FTS = Faculty of Transportation Sciences<br>
+  FME = Faculty of Mechanical Engineering<br>
+  FEE = Faculty of Electrical Engineering<br>
+  FNSPE = Faculty of Nuclear Sciences and Physical Engineering<br>
+  FCE = Faculty of Civil Engineering<br>
+  FA = Faculty of Architecture<br>
+  FBME = Faculty of Biomedical Engineering<br>
+  FIT = Faculty of Information Technology<br>
+  MIAS = Masaryk Institute of Advanced Studies<br>
+  </p>
+
+
+  <form action="/ctu.html">
+  <label for="cname">Course name</label><br>
+    <input type="text" id="cname" name="cname"><br>
+
+  <h2>Faculty</h2>
+  <input type="checkbox" id="fac1" name="fac" value="FTS">
+  <label for="fac1">FTS</label><br>
+  <input type="checkbox" id="fac2" name="fac" value="FME">
+  <label for="fac2">FME</label><br>
+  <input type="checkbox" id="fac3" name="fac" value="FEE">
+  <label for="fac3">FEE</label><br>
+  <input type="checkbox" id="fac4" name="fac" value="FNSPE">
+  <label for="fac4">FNSPE</label><br>
+  <input type="checkbox" id="fac5" name="fac" value="FCE">
+  <label for="fac5">FCE</label><br>
+  <input type="checkbox" id="fac6" name="fac" value="FA">
+  <label for="fac6">FA</label><br>
+  <input type="checkbox" id="fac7" name="fac" value="FBME">
+  <label for="fac7">FBME</label><br>
+  <input type="checkbox" id="fac8" name="fac" value="FIT">
+  <label for="fac8">FIT</label><br>
+  <input type="checkbox" id="fac9" name="fac" value="MIAS">
+  <label for="fac9">MIAS</label><br>
+
+  <h2>Study level</h2>
+  <input type="checkbox" id="degree1" name="degree" value="Bachelor">
+  <label for="degree1">Bachelor</label><br>
+  <input type="checkbox" id="degree2" name="degree" value="Master">
+  <label for="degree2">Master</label><br>
+  <input type="checkbox" id="degree3" name="degree" value="Doctorate">
+  <label for="degree3">Doctorate</label><br>
+
+    <h2>Semester</h2>
+  <input type="checkbox" id="semester1" name="semester" value="S">
+  <label for="semester1">Spring</label><br>
+  <input type="checkbox" id="semester2" name="semester" value="W">
+  <label for="semester2">Winter</label><br>
+
+    <h2>Sort for</h2>
+
+    <input type="radio" id="course" name="sort" value="3">
+    <label for="course">Course</label><br>
+    <input type="radio" id="semester" name="sort" value="4">
+    <label for="semester">Semester</label><br>
+    <input type="radio" id="credits" name="sort" value="5">
+    <label for="credits">Credits</label><br>
+    <input type="radio" id="faculty" name="sort" value="6">
+    <label for="faculty">Faculty</label><br>
+    <input type="radio" id="study" name="sort" value="7">
+    <label for="study">Study level</label><br>
+
+    <h2>Ascending/Descending</h2>
+
+    <input type="radio" id="ascend" name="ascend_descend" value="ascending">
+    <label for="ascend">Ascending</label><br>
+    <input type="radio" id="descend" name="ascend_descend" value="descending">
+    <label for="descend">Descending</label><br><br>
+
+    <input type="hidden" id="uni" name="uni" value="CTU">
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <form action="/ctu.html">
+    
+    <input type="submit" name="selected" value="Selected">
+  </form>
+  <object type="text/html" data="output.html" width="50%" height="600" class="objectOutput"></object>
+
+
+
+
+</body></html>

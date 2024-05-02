@@ -1,0 +1,63 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  float: left; /* Lisame uue rea */
+}
+
+.table-container {
+  float: left; 
+  margin-left: 20px; 
+}
+
+input[type="text"], input[type="submit"], label, select {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: #00457c;
+}
+
+input[type="submit"] {
+    background-color: #005699;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.pair {
+	background-color: white;
+}
+
+.pairless {
+	background-color: lightblue;
+}
+
+td {
+	text-align: center;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 5px;
+  
+}
+
+.clr-checkbox {
+  width: 15px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}

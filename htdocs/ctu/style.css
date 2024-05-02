@@ -1,0 +1,58 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+h1, h2 {
+    color: blue;
+}
+input[type="text"], input[type="submit"], label, select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+}
+input[type="submit"] {
+    background-color: #005699;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #00457c;
+}
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+label {
+    font-weight: bold;
+    color: #333;
+}
+h2 {
+    border-bottom: 2px solid #005699;
+    padding-bottom: 3px;
+}
+button {
+    background-color: #005699;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #00457c;
+}
+.objectOutput {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
